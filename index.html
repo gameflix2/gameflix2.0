@@ -8,29 +8,39 @@
     <style>
         body { background-color: #000; color: white; font-family: 'Inter', sans-serif; }
         .last-offer-card { border: 1px solid #333; background: #080808; }
-        .text-glow { text-shadow: 0 0 10px rgba(229, 9, 20, 0.5); }
+        .video-container { box-shadow: 0 0 30px rgba(229, 9, 20, 0.2); border: 1px solid #222; }
     </style>
 </head>
 <body class="flex flex-col items-center justify-center min-h-screen p-6">
 
-    <header class="mb-10 text-center">
+    <header class="mb-8 text-center">
         <h1 class="text-2xl font-black text-[#E50914] tracking-tighter uppercase italic">GAMEFLIX</h1>
     </header>
 
-    <div class="w-full max-w-sm last-offer-card p-8 rounded-3xl text-center shadow-2xl">
+    <div class="w-full max-w-sm last-offer-card p-6 md:p-8 rounded-3xl text-center shadow-2xl">
         
         <span class="text-[10px] bg-zinc-800 text-zinc-400 px-3 py-1 rounded-full uppercase font-black tracking-widest">Última Tentativa</span>
         
-        <h2 class="text-2xl font-black mt-6 mb-4 leading-tight uppercase tracking-tighter">
+        <h2 class="text-2xl font-black mt-6 mb-4 leading-tight uppercase tracking-tighter px-2">
             VOU FAZER O <span class="text-[#E50914]">IMPOSSÍVEL</span> POR VOCÊ.
         </h2>
 
-        <p class="text-zinc-500 text-xs leading-relaxed mb-8 px-2">
-            Não quero que você saia com apenas 5 jogos. Para fecharmos agora: pague apenas a diferença para o valor de custo.
+        <div class="w-full video-container rounded-lg overflow-hidden aspect-video mb-6 bg-zinc-900">
+            <iframe 
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/ID_DO_SEU_VIDEO_CURTO?autoplay=1&controls=0&rel=0&modestbranding=1" 
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <p class="text-zinc-500 text-xs leading-relaxed mb-6 px-2">
+            Não quero que você saia com acesso limitado. Assista ao vídeo e entenda como levar TUDO por preço de custo.
         </p>
 
-        <div class="mb-10">
-            <p class="text-[10px] text-zinc-600 uppercase font-bold mb-1">Apenas mais:</p>
+        <div class="mb-8">
+            <p class="text-[10px] text-zinc-600 uppercase font-bold mb-1">Pagar apenas mais:</p>
             <div class="text-6xl font-black text-white tracking-tighter">
                 R$ 15,90
             </div>
@@ -41,12 +51,12 @@
             ACEITAR AGORA
         </a>
 
-        <a href="LINK_DA_ENTREGA_FINAL" class="block mt-8 text-zinc-700 text-[10px] uppercase font-bold hover:text-zinc-500 underline tracking-widest">
+        <a href="LINK_DA_ENTREGA_FINAL" class="block mt-6 text-zinc-700 text-[10px] uppercase font-bold hover:text-zinc-500 underline tracking-widest">
             Não, quero continuar com o plano básico
         </a>
     </div>
 
-    <div class="mt-12 flex items-center gap-2 opacity-20 scale-75">
+    <div class="mt-10 flex items-center gap-2 opacity-20 scale-75">
         <img src="https://logodownload.org/wp-content/uploads/2019/08/pix-logo-2.png" class="h-4">
         <span class="text-white font-bold text-xs uppercase italic">Aprovação Instantânea</span>
     </div>
